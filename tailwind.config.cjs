@@ -2,8 +2,6 @@
 
 module.exports = {
 	important: true,
-	purge: ['./src/**/*.{js,jsx,ts,tsx,html}', './public/index.html'],
-    
 	content: [
 		"./index.html",
 		"./src/**/*.{js,ts,jsx,tsx}",

@@ -24,10 +24,10 @@ export function Orders() {
 
     const { data: result } = useQuery({
         queryKey: ['orders', pageIndex, orderId, customerName, status],
-        queryFn: () => 
+        queryFn: () =>
             getOrders({
                 pageIndex,
-                orderId, 
+                orderId,
                 customerName, 
                 status: status == 'all' ? null : status
             })
